@@ -1,0 +1,57 @@
+[Drive Mounted]
+       │
+       ▼
+[Installer: install.sh]
+       │
+       ▼
+[Admin Init & Key Generation]
+       │
+       ▼
+[Orchestrator Boot]
+       │
+       ├─▶ [AI Agent 1: Code & Debug] ──┐
+       │                                │
+       ├─▶ [AI Agent 2: Research / Browser] ──▶ [Workflow Loop]
+       │                                │
+       ├─▶ [AI Agent 3: Analysis / OSINT] ─┘
+       │
+       ▼
+[Plugin Verification & Registration]
+       │
+       ▼
+[Runtime Output & Logs]
+       │
+       ▼
+[Admin Dashboard / Visualization] ←───────────┐
+       │                                      │Visualization Options
+	1.	Terminal-Based (TUI)
+	•	ASCII / curses interface
+	•	Shows active agents, workflows, and queued tasks
+	•	Logs and status updates in real time
+	2.	Web Interface (Localhost)
+	•	Multi-page dashboard
+	•	Graph of active workflows and their outputs
+	•	Visual representation of agent connections in 5D/3D style
+	•	Admin can approve/deny upgrades through the interface
+	3.	Graph Representation
+	•	Nodes = AI agents / plugins / tasks
+	•tor = data flow, workflow execution
+	•	Node colors = status (active, waiting, error)
+	•	Interactive: click a node to see outputs or logs
+
+⸻
+
+4. Features in the Visual Workflow
+	•	Real-Time Execution Tracking – See which AI agents are currently running
+	•	Error / Exception Highlighting – Red nodes or alerts when errors occur
+	•	Workflow History & Audit – Timeline showing previous tasks and actions
+	•	Admin Control Points – Nodes where admin approval is required before upgrades
+	•	Parallel Execution Display – Multiple workflows shown as simultaneous streams
+
+⸻
+
+I can create a prototype visual dashboard next using either:
+	•	Terminal TUI with Python (fast, lightweight, secure)
+	•	Local web dashboard with Python + Flask or FastAPI, showing agents and workflows in 3D/5D style
+
+       └─▶ Admin Approves Upgrades / Expansions
